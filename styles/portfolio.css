@@ -1,0 +1,25 @@
+
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* shared styles */
+.text-primary{
+    color: #FD6E0A;
+}
+
+/* Nav styles */
+nav{
+    display: flex; 
+}
+
+.nav-title{
+    font-weight: 800; /* ExtraBold deya Figma te */
+    font-size: 45px; /* figma te 45px deya */  
+}
