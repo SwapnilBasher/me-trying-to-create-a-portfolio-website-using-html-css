@@ -14,12 +14,43 @@
     color: #FD6E0A;
 }
 
+.dark-2{
+    color: #474747; 
+}
+
 /* Nav styles */
 nav{
     display: flex; 
+    align-items: center; /* vertically center korar jonno */ 
+    justify-content: space-between; /* left theke right e space create korar jonno */ 
+    margin: 50px 200px; 
+}
+
+nav ul{
+    display: flex; 
+    align-items: center;
 }
 
 .nav-title{
     font-weight: 800; /* ExtraBold deya Figma te */
     font-size: 45px; /* figma te 45px deya */  
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 50px; 
+}
+
+nav ul li a{
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+.btn-primary{
+    background-color: #FD6E0A; 
+    padding: 18px 36px; 
+    color: #FFFFFF; 
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px; 
 }
