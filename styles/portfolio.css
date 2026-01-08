@@ -1,56 +1,133 @@
-
-
 .open-sans-normal {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 /* shared styles */
-.text-primary{
+.text-primary {
     color: #FD6E0A;
 }
 
-.dark-2{
-    color: #474747; 
+.dark-2 {
+    color: #474747;
+}
+
+/* Header styles */
+.header {
+    background-image: url('../images/developer.png') , url('../images/header_bg.png'); 
+    background-repeat: no-repeat;
+    background-position: top left , bottom right; 
 }
 
 /* Nav styles */
-nav{
-    display: flex; 
-    align-items: center; /* vertically center korar jonno */ 
-    justify-content: space-between; /* left theke right e space create korar jonno */ 
-    margin: 50px 200px; 
+nav {
+    display: flex;
+    align-items: center;
+    /* vertically center korar jonno */
+    justify-content: space-between;
+    /* left theke right e space create korar jonno */
+    margin: 50px 200px;
 }
 
-nav ul{
-    display: flex; 
+nav ul {
+    display: flex;
     align-items: center;
 }
 
-.nav-title{
-    font-weight: 800; /* ExtraBold deya Figma te */
-    font-size: 45px; /* figma te 45px deya */  
+.nav-title {
+    font-weight: 800;
+    /* ExtraBold deya Figma te */
+    font-size: 45px;
+    /* figma te 45px deya */
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
-    margin-right: 50px; 
+    margin-right: 50px;
 }
 
-nav ul li a{
-    text-decoration: none; 
+nav ul li a {
+    text-decoration: none;
     font-size: 20px;
 }
 
-.btn-primary{
-    background-color: #FD6E0A; 
-    padding: 18px 36px; 
-    color: #FFFFFF; 
+.btn-primary {
+    background-color: #FD6E0A;
+    padding: 18px 36px;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 5px; 
+    border-radius: 5px;
+    border: none;
+}
+
+/* banner styles */
+
+.banner{
+    display: flex; 
+    justify-content: space-between;
+    margin: 0 35px 0 230px ;  
+}
+
+.banner-content{
+    max-width: 580px; 
+}
+
+.banner-greetings {
+    font-size: 45px;
+    font-weight: 600;
+    /* In CSS, **`font-weight: semi-bold;` is not valid**.
+    
+    The **numeric value for semibold is:**
+    
+    ```
+    font-weight: 600;
+    ```
+    
+    ### Common font-weight numbers:
+    
+    ```
+    100 – Thin  
+    200 – Extra Light  
+    300 – Light  
+    400 – Normal (default)  
+    500 – Medium  
+    600 – Semi-Bold  
+    700 – Bold  
+    800 – Extra Bold  
+    900 – Black
+    ```
+    
+    ### Example:
+    
+    ```css
+    h2 {
+      font-weight: 600;
+    }
+    ```
+    
+    ⚠️ **Note:** The font you’re using must support that weight. If it doesn’t, the browser will fall back to the nearest available weight.
+    
+    If you want, tell me which font you’re using (e.g., Poppins, Roboto), and I’ll confirm the exact supported weights.
+     */
+}
+
+.banner-title{
+    color: #181818; 
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.banner-description{
+    color: #757575;
+    font-size: 18px; 
+    font-weight: 400;
+}
+
+.banner-profile-pic{
+    width: 580px; 
 }
